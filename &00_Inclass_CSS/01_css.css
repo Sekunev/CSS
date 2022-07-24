@@ -1,0 +1,60 @@
+/* --> tag kullanımı:
+p{} bütün paragraflara bu stil'li uygula
+a{} bütün linklere bu stil'li uygula
+div{} bütün div bu stil'li uygula
+span{} bütün span'lara bu stil'li uygula */
+
+h1 {
+    background-color: aquamarine;
+}
+p {
+    color: red;
+}
+div {
+    border: 3px solid blue;
+    padding: 15px;
+    margin: 30px;
+    /*comment row*/
+}
+#text1{
+    background-color: rgb(231, 215, 250);
+}
+.lor1.{
+    background-color: rgb(0, 139, 120);
+}
+
+/* *{
+    margin: 0;
+    border: 3px solid salmon;
+} */
+#p3{
+    background-color: rgb(170, 43, 60);
+}
+        /* p1 inline da bulunduğu için burda stil veremeyiz. */
+#p1{
+    background-color: yellow; 
+}
+.ortak{
+    background-color: yellowgreen;
+}
+/* //*önceliği Id ye vermiş. */
+#p4{ // *önceliği Id ye vermiş.
+    background-color: yellow;
+    border: darkblue 10px;
+    margin-top: 10px;
+    margin-bottom: 15;
+}
+#p5{
+    background-color: aqua;
+    border: 5px double red ;
+    border-radius: 30px;
+    padding: 2px;
+    margin: 10px;
+}
+#p6{
+    background-color: aqua;
+    width: 200px;
+    margin: auto;
+    padding: 10px 20px 30px 40px;
+    text-align: center;
+}

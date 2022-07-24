@@ -1,0 +1,69 @@
+body{
+    background-color: black;
+    color: white;
+}
+.conteiner{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: auto;
+    background-color: rgb(54, 53, 53);
+    border-radius: 20px;
+
+}
+#title{
+    font-size: 90px;
+    text-align: center;
+}
+.heading{
+    font-family: 'Lobster', cursive;
+}
+#span1{
+    color: red;
+}
+#img-div{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+#image{
+    width: 500px;
+    box-shadow: 5px 10px 8px 5px red;
+    margin: auto;
+}
+#info{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 20px auto;
+    text-align: justify;
+    font-size: 25px;
+}
+#marvel{
+    color: red;
+    margin-left: 10%;
+
+}
+ul{
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 80%;
+}
+li{
+    font-size: 20px;
+    line-height: 3rem;
+}
+#footer{
+    /* border: 2px solid red; */
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+#link{
+    text-decoration: none;
+    color: white;
+    border: 2px solid darkgoldenrod;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(41, 36, 30);
+}
+#link:hover{
+    background-color: darkgoldenrod;
+}
