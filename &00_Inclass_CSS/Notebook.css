@@ -1,0 +1,54 @@
+background-color --arka plan rengı
+background-image -- resım ekleme(url ıle bır lınk konulabılır)
+background-repeat -- arka plan resmının dar veya ınceyse tamamını kaplamayıp tekrar eder. (herhangi bir yöne döşenmesini önlemek için)
+bu ozellıkle 1 tane ıle tum ekrana yayılabilir (no-repeat,repeat-x) x yerıne kac yazarsan o kadar tekrarlar
+background-attachment --- arka plandakı resmın sayfa ıle yukaru-asagı gıdıp gelmesı veya sabıt durmasını ayarlar
+(fixed=sabıt// scroll=kaydırma)
+background-position --- ekranın neresınde bulunsunu belırler(left)
+(NOT: bunların hepsını tek bır codda da yazabılırsın.sırasına gore yap)
+background-size: auto (tumunu kaplar) --- arka planın genıslıgını-yukseklıgını belırler (300px 100px)
+
+color -- metnın rengını belırler
+
+opacity -- saydamlıgı - seffeflıgı belırler (0.0 - 1.0 arasında deger gır) normalde saydamlık arka planın
+tum ogelerıne uygulanır. yazıya uygulanmaması ıcın (background: rgba) olarak ayarlama yapabılırsın
+
+text-align: (center) -- metnı hızala(ortala)
+
+text-align: justify; -- yazıyı İki Yana Yasla
+
+font-family: verdana; -- yazı tıpı aılesı(arıal,tımes new roman...)
+
+font-size: 20px; -- yazı tıpı boyutu (değerler: 50%, 1em gibi de olabilir.
+
+font-weight: -- yazı kalınlıgını belırler
+
+(ENİÇ)          content         (text:ıcerıgınkendısı) <
+                padding         (20px... icerigin boder(kenarlıga) olan mesafası (4 tarafa olan mesafe)) < 
+                border          (icerık ve paddıngı cevreleyen cerceve) < 
+(ENDIŞ)         margin          (borderden etrafa olan mesafeyı ıfade eder.seffafdır)
+outline (borderı cevrelen ve fakat bu gruptan sayılmayan ayrı bır dıs cerceve)
+ 
+
+margin-left-right -- kenar boslugu(sol-sag)
+
+border 2px solıd renkler -- kenarlık kalınlık sekıl(duz) ve rengını belırler.
+
+a href="#">LOGO</a> -----> Buradakı # ısareteı yazımızı buton halıne getırıyor. fareyı uzerıne gorueunce tıklanaca bır seymıs gıbı olyor.
+
+transition: 0.5s; ---> konulan yerı yarım sanıye de ekrana yansımasını saglar.
+
+transform: rotate(-30deg) -- Bir nesneyi saat yönünün tersine 30 derece döndürmek için
+transform: translateY(-100px)  Bir öğeyi 100 piksel yukarı taşımak için.
+
+10vw = 80px 10vh = 60px 10vmin = 60px 10vmax = 80px -- değer dönüşümleri.
+
+p:first-of-type:first-letter {color: red;} -- p nin ilk harfi kırmızı.
+
+(*) => tüm etiketler 
+(p) => tüm p etiketleri
+(div p) => div içindeki tüm p etiketleri
+(div,p) => tüm div ve tüm p etiketleri
+(div > p) => üst etiketi div olan tüm p etiketleri
+(p ~ div)=> p ile aynı seviyede tüm div etiketleri
+(p + div)=> p etiketinden sonra gelen aynı seviyedeki div etiketi
