@@ -4,6 +4,13 @@ a{} bütün linklere bu stil'li uygula
 div{} bütün div bu stil'li uygula
 span{} bütün span'lara bu stil'li uygula */
 
+
+/* p { --> "p" is the selector
+    color: #000000;  ---> "#000000" is the property
+  } */  -->  /*"color" is the value */
+  
+  /* padding: 10px 10px 0px 0px; Üstte ve altta 10 piksel ve solda ve sağda 0 piksellik bir dolgu değeri */
+
 h1 {
     background-color: aquamarine;
 }
@@ -47,7 +54,8 @@ div {
 #p5{
     background-color: aqua;
     border: 5px double red ;
-    border-radius: 30px;
+    border-radius: yuvarlatılmış border.
+    border-radius: 30px;  nn
     padding: 2px;
     margin: 10px;
 }
