@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSHTML</title>
+    <style>
+        p{
+            width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    (ENİÇ)          content         (text:ıcerıgınkendısı) <
+                padding         (20px... icerigin boder(kenarlıga) olan mesafası (4 tarafa olan mesafe)) < 
+                border          (icerık ve paddıngı cevreleyen cerceve) < 
+(ENDIŞ)         margin          (borderden etrafa olan mesafeyı ıfade eder.seffafdır)
+outline (borderı cevrelen ve fakat bu gruptan sayılmayan ayrı bır dıs cerceve)
+
+<br>
+<h4>CSS id Selector</h4>
+p selector, HTML dosyasındaki tüm <p> öğeleri seçmek için kullanılır.
+
+p. {
+    text-align: center;
+    color: red;
+ }
+    
+ id="text1" 
+
+  #text1 {
+    color: red;
+  }
+
+<h4>CSS class Selector</h4>
+
+<p>Sınıf seçici, classHTML dosyasındaki o sınıfın tüm öğelerini seçmek için özniteliği kullanır.Belirli bir sınıfa sahip öğeleri seçmek için nokta (.) karakteri kullanılır.</p>
+
+.error {
+    color: red;
+  }
+  
+p.error {
+    color: red;
+  }
+
+<h4>Universal Selector</h4>
+<p>Evrensel seçici *, sayfadaki tüm HTML öğelerini seçer.</p>
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+  }
+
+<h4>Yorum </h4>
+
+p {
+    color: red;           /*Single-line comment*/
+  }
+  
+  /* Multi-line
+  comment */
+<h4>Box Model</h4>
+<p>Kutudaki özellikler hangi sırayla çalışır? top-right-bottom-left</p> 
+
+<h4>Colors</h4>
+<p>Colors are defined by;
+    names
+    RGB
+    HEX
+    HSL
+    RGBA
+    HSLA values.</p>
+    <p>Varsayılan bir renk adı kullanılarak bir renk tanımlanabilir: CSS/HTML, 140 standart renk adını destekler. Örnek: Red, Orange</p>
+<h5>RGB değerleri</h5>
+rgb(red, green, blue)
+<p>Her kırmızı, yeşil ve mavi parametre, rengin yoğunluğunu 0 ile 255 arasında tanımlar. <br>
+
+Örneğin, rgb(0, 0, 255) mavi olarak görüntülenir, çünkü mavi 255'e ve diğerleri 0'a ayarlanmıştır.<br>
+
+Siyah rengi görüntülemek için, tüm renk parametreleri şu şekilde 0'a ayarlanmalıdır: rgb(0, 0, 0).<br>
+
+Beyaz rengi görüntülemek için tüm renk parametreleri 255'e ayarlanmalıdır, şu şekilde: rgb(255, 255, 255).</p> 
+<h5>HEX Değerleri</h5>
+<p>Onaltılık bir değer kullanılarak bir renk tanımlanabilir:</p>
+<p>Örneğin, #0000FF mavi olarak görüntülenir, çünkü mavi FF'ye ve diğerleri 00'a ayarlıdır. Örnek: #FFA2FF</p>
+
+<h4>HSL Values</h4>
+
+
+
+
+</body>
+</html>
