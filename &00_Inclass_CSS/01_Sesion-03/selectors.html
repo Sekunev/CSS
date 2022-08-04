@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="selectors.css">
+    <title>Selectors</title>
+</head>
+<body>
+    <p>Genel kullanım olarak CSS sayfasına marjin, padding 0 verilerek başlanır. Sebebi tarayıcının default değerlerini geçersiz kılmaktır.</p>
+    <p>Bir Class valuesinin  içerisine birden fazla class tanımlanabilir. Style etiketi altında tanımlama yapıldığında bir p etiketine birden fazla class tanımlanmış olur.</p>
+
+    <p><span style="color: red;">Inherit</span> öncelikle bir proporty (özelliğin) inherit olup olmadığına bakılmalı. W3School gibi sitelerden bakılabilir. inherit özelliğe sahip ise bağlı bulunduğu etiketten özeelliği iherit edebilir. örenkte em etiketi içerisine yazılan içerik p etiketinden inherit edilmiş çünkü color ın inherit özelliği bulunmaktadır. </p>
+
+    <span style="color: red;">CSS Öncelikleri:</span>
+    <ol>
+        <li>İnline CSS</li>
+        <li>ID selector</li>
+        <li>Class selector</li>
+        <li>Browser Defaults</li>
+    </ol></p><br>
+
+
+    <div class="container">
+        <p class="p1">Container>paragraf 1</p>
+        <p class="p1">Container>paragraf 2</p>
+        <div class="box">
+            container>box
+            <p>container>box>paragraf 3</p>
+        </div>
+        <div class="box">container>box</div>
+    </div><br>
+
+    <p title="baslik1">paragraf 4 ün devamı <em>inherrit</em> </p>
+    <p title="baslik2">paragraf 5</p>
+
+    <section class="attribute">
+
+        <h1 title="baslik3">Lorem ipsum dolor sit amet.</h1>
+        <p title="paragraf2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quo deleniti dignissimos, ex qui porro autem sapiente, culpa aspernatur minima a. Suscipit ratione maiores fugit numquam molestias quidem rerum odit?
+        </p>
+        <h1 title="baslik4">Lorem ipsum dolor sit amet.</h1>
+        <p title="paragraf3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quo deleniti dignissimos, ex qui porro autem sapiente, culpa aspernatur minima a. Suscipit ratione maiores fugit numquam molestias quidem rerum odit? ancak p ye border özelliği ekleyince em ye ayrıca uygulanmadı. çünkü border'in kalıtım özelliği yoktur. Eğer em içeriğine inherit etmek istiyorsak "em {border: inherit;}" şeklinde css kodunu yazarız. Buda bize en yakın kapsayıcı eleman hangisi ise onun border'ini miras bırakır. kalıtım eder.
+        </p>
+    </section><br>
+
+    <ul>
+        <span style="color: red;">stiller: </span>
+        <li><span style="color: red;">.div {}</span> gibi genel etiket ile verilen stiller bütün div'lere uygulanır.</li>
+        <li><span style="color: red;">.div p {}</span>div etiketinin altındaki p etiketlerine uygulanır.</li>
+        <li><span style="color: red;">.container div p{}</span>Container class ı altındaki div lerin altındaki p lere uygula.</li>
+        <li><span style="color: red;">p + div{}</span>p etiketinden sonra gelen div'e uygula.</li>
+        <li><span style="color: red;">p[title="baslik1"]{}</span>p etiketinden title'ı baslık1 olan içeriklere stil uygular.</li>
+        <li><span style="color: red;">h1[title="baslik3"]{}</span>sadece h1 etiketinden title'ı baslık3 olan içeriklere stil uygular.</li>
+        <li><span style="color: red;">p::first-letter{}</span>Bütün p etiketinden ilk harflerine stil uygular.</li>
+        <li><span style="color: red;">p::first-line{}</span>Bütün p etiketinden ilk satırına stil uygular.</li>
+    </ul>
+
+    
+</body>
+</html>
