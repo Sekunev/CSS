@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #sec1{
+        background-color: antiquewhite;
+        border: 1px solid black;
+        padding: 50px;
+    }
+    h1{
+        background-color: rgb(188, 167, 207);
+        padding: 10px;
+        border:2px solid greenyellow ;
+    }
+    #sec2{
+        background-color: aqua;
+    }
+    nav{
+        background-color: aquamarine; padding: 18px;
+    }
+    a{ padding: 10px; border: 1px solid black; }
+    div{
+        background-color: antiquewhite;
+        width: 300px; 
+        height: 100px;
+        padding: 25px; 
+        border: 2px solid blue;
+        /* box-sizing: border-box; */ /* "*" satırında tanımladığımız için buraya gerek kalmadı.*/
+        overflow: scroll;
+    }
+
+
+</style>
+<body>
+    .container>.div$*3
+
+<p><span style="color: red;">padding</span> çeriği ile kenarlıklar arasındaki boşluğu tanımlamak için kullanılır. Dolgunun uzunluğu px, rem, em, cm vb. olarak tanımlanır. Dolgunun uzunluğu px, rem, em, cm vb. olarak tanımlanır. Inherittir.</p>
+<p><span style="color: red;">Shorthand </span> Özelliği kullanılabili.r</p>
+<p><span style="color: red;">box-sizing: border-box; </span> Bu, elemanın genişliğini korumasına neden olur; paddingi artırırsanız, kullanılabilir içerik alanı azalır. Div örneğinde genişlik 300 px sonra padding den sağ sol için de 50 px eklenince 350 px lik bir genişlik elde edilmiş oluyor. bu aslında istenmeyen bir durum. bunu engellemek için box-sizing kullanılıyor. </p>
+<p><span style="color: red;">box-sizing: border-box; </span> Bu tanımlamayı css dosyası ilk satırında * ile tüm bloklara uygulanacak şeklinde tenımlarsak her kod blogunun altına tekrar tekrar yazmaya gerek kalmaz. </p>
+<p><span style="color: red;">height</span> değer ataması yapıldığında yükseklik sabit kalır. içerik border'in dışına dahi çıkabilir. bunu engellemek için  overflow: scroll; stili verilmeli.</p>
+<p><span style="color: red;">overflow: scroll;</span> Yüksekliği sabitlemek için kayan pencere ekler.</p>
+
+
+<br>
+<nav>
+    <a href="#">home</a>
+    <a href="#">Movie</a>
+    <a href="#">Contact</a>
+</nav>    
+
+<main>
+    <section id="sec1">
+        <h1>Ders CSS</h1>
+    </section>
+    <section id="sec2">
+        <h1>Ders HTML</h1>
+    </section>
+</main>
+
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis earum temporibus pariatur quibusdam, totam fugiat unde ducimus distinctio ratione itaque exercitationem accusantium, dicta dolorum dignissimos est omnis aspernatur sapiente? Totam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae culpa asperiores consequuntur unde tempora voluptas repellat autem corrupti quam magnam nemo perferendis officia id eligendi voluptatem et, non maiores.</p>
+</div>
+    
+</body>
+</html>

@@ -1,23 +1,23 @@
 *{
-    margin: 2px;
+    /* margin: 2px; */
     /* padding: 2px; */
 }
 /* body{
     padding: 2px;
 } */
 
-/* .container{
+.container{
     background-color:darkorange;
     margin: 50px;
     padding: 2px;
-}  */
+} 
 
 .box1{
     background-color: rgba(255, 0, 0, 0.535);
     padding: 2px;
     margin: 30px;
 }
-.box2{
+/* .box2{
     background-color: rgba(172, 255, 47, 0.474);
     border: 3px solid blue;
     margin: inherit;
@@ -26,14 +26,14 @@
     width: 200px;
     
 
-}
-.box3{
+} */
+/* .box3{
     background-color:magenta;
     margin-top: 20px;
     padding: 2px;
-} 
+}  */
 
-.box4{
+/* .box4{
     background-color: cyan;
     padding: 2px;
-} 
+}  */

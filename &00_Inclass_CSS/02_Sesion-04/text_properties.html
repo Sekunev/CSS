@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text</title>
+    <style>
+        h1{
+            color: red; 
+            text-align: left; 
+            text-decoration: underline; 
+            text-transform: capitalize;
+            letter-spacing: 3px; 
+            line-height: 2; 
+            word-spacing: 20px;
+            text-shadow:  10px 10px 5px blue; 
+            
+        }
+        h2{
+            text-decoration: overline;
+            text-transform:inherit;
+            text-indent: 30px; 
+            column-count: 2;
+            column-rule: 3px solid rgb(235, 111, 10);
+            /* yukardaki kod bazı tarayıcılarda çalışmayabilir. bu durumda kod şu şekilde tadil edilmelidir.-webkit-column-count: 3; -moz-column-rule:*/
+      
+
+
+        }
+        h3{
+            text-decoration:line-through
+        }
+        h4{
+            direction: rtl
+        }
+    </style>
+</head>
+<body>
+
+    <p><span style="color: red;">color</span> Metne renk verir.</p>
+    <p><span style="color: red;">text-align </span> Metni sağa - sola - ortaya yaslamaya yarar.</p>
+    <p><span style="color: red;">text-decoration</span> Metnin sağ - sol - ortasına çizgi çeker.</p>
+    <p><span style="color: red;">text-transform</span> Metni büyük, küçük, ilk harf büyük gibi nitelik kazandırır.</p>
+    <p><span style="color: red;">text-indent</span> ilk satırının girintisini ayarlamak için kullanılır:</p>
+    <p><span style="color: red;">letter-spacing</span> karakterler arasındaki boşluğu ayarlamak için kullanılır.</p>
+    <p><span style="color: red;">line-height</span> satırlar arasındaki boşluğu belirtmek için kullanılır:</p>
+    <p><span style="color: red;">word-spacing</span> kelimeler arasındaki boşlukları belirtmek için kullanılır.</p>
+    <p><span style="color: red;">direction</span> elemanın metin yönünü değiştirmek için kullanılır. Özellikle arapça gibi sağdan sola yazım kuralı bulunan alfabelerde rtl(right to left) value'si kullanılır. ltr bizim alfabemiz yönü olduğu için değişiklik olmaz.</p>
+    <p><span style="color: red;">text-shadow</span> karakterler arasındaki boşluğu ayarlamak için ve gölge kazandırır. 1 ve 2. parametre x-y ekseninde kaydırır. 3. parametre ise flu'luk oranını ayarlar.</p>
+    <p><span style="color: red;">column-count: 5</span> metni değerde belirtilen kadar stunlara böler.</p>
+    <p><span style="color: red;">column-rule: 3px solid blue</span> Bölünen klonlar arasına çizgi çizer.</p>
+
+
+
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae velit laborum doloribus quod ea eum rem aut possimus, reprehenderit aliquam similique consequatur excepturi, quas placeat ratione ipsum cum a porro? </h1>
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit totam sit maxime sequi quam, qui reprehenderit. Praesentium, dolores earum optio ut voluptatibus corporis nostrum laborum veritatis. Voluptatum architecto iste iusto?</h2>
+    
+    <h3>Ders react</h3>
+
+    <h4> أكد مسؤول بارز في حركة طالبان أن الحكومة الأفغانية تحقق في تأكيد الولايات
+        المتحدة مقتل زعيم تنظيم القاعدة أيمن الظواهري في هجوم بطائرة مسيرة في
+        العاصمة الأفغانية كابول.أكد مسؤول بارز في حركة طالبان أن الحكومة الأفغانية
+        تحقق في تأكيد الولايات المتحدة مقتل زعيم تنظيم القاعدة أيمن الظواهري في
+        هجوم بطائرة مسيرة في العاصمة الأفغانية كابول.</h4>
+</body>
+</html>

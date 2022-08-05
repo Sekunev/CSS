@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CSS Link</title>
+</head>
+<style>
+
+a{
+  background-color: bisque;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 20%;
+  color: black;
+  font-size: 20px;
+  /* border: 1px solid blueviolet; */
+  margin: 30px;
+
+}
+a:link{
+    color: pink;
+}
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: blue;
+}
+a:link {
+  text-decoration: none;
+}
+
+</style>
+<body>
+
+<br>
+<nav>
+    <a href="https://clarusway.com"><i class="fa-solid fa-chalkboard-user"></i> Education</a>
+    <a href="https://google.com"><i class="fa-solid fa-magnifying-glass-location"></i> Search</a>
+    <a href="https://bbc.com"><i class="fa-solid fa-newspaper"></i> News</a>
+</nav>    
+<br><hr><br>
+<span style="color: red;">Bağlantı durumları bildirilirken aşağıdaki sıralama önerilir.</span>
+<p><span style="color: red;">a:link{}</span> Normal durum, ziyaret edilmemiş bağlantı</p>
+<p><span style="color: red;">a:visited {} </span> Daha önce ziyaret edilen bağlantı</p>
+<p><span style="color: red;">a:hover {} </span> fare üzerine Durum </p>
+<p><span style="color: red;">a:active {} </span> Tıklanan bağlantı</p>
+<p><span style="color: red;">text-decoration: </span> bağlantılardan alt çizgileri kaldırmak için kullanılır:</p>
+<p><span style="color: red;">Sıralamada dikkat </span>a:hover a:link ve a:visited'den sonra gelmelidir. a:active a:hover'dan sonra gelmelidir ZORUNLU</p>
+<p><span style="color: red;">fontawesome İcon ekleme. </span>önce https://cdnjs.com/libraries/font-awesome sitesinden bağlantı linki head'e kopyalanır. sonra font codu adresinden alınarak style bölümüne yapıştırılır.</p>
+    
+</body>
+</html>
