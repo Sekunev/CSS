@@ -3,29 +3,38 @@
 
 ul{
     list-style-type:none;
-    list-style-type: decimal;     list-style-type: disc; 
-    list-style-type: decimal-leading-zero;
-    list-style-type: armenian;
-    list-style-type: lower-alpha;
-    list-style-type: lower-greek;
-    list-style-type: lower-latin;
-    list-style-type: lower-roman;
-    list-style-type: square;
-    list-style-type: georgian; 
+    /* list-style-type: decimal;     list-style-type: disc;  */
+    /* list-style-type: decimal-leading-zero; */
+    /* list-style-type: armenian; */
+    /* list-style-type: lower-alpha; */
+    /* list-style-type: lower-greek; */
+    /* list-style-type: lower-latin; */
+    /* list-style-type: lower-roman; */
+    /* list-style-type: square; */
+    /* list-style-type: georgian;  */
+    /* https://unicode-table.com/en/sets/emoji/ 
+    buradan emoji alınabilir. ayrıca "windows+." kullanılabilir. */
+    /* list-style-type:"\1F608"; */
 
 }
 
 /* *********!list-style-type image (işaretçisinin görüntü olmasını ayarlar)Kullanımı.******** */
 
-ul{
+/* ul{
     list-style-image: url(./2022-08-10\ \(1\).png);
-}
+} */
 
 /* *********!list-style-type position (işaretçilerinin konumunu ayarlar.) Kullanımı.******** */
 
-ul{
-    list-style-position:inside ;
-}
+/* ul{
+    list-style-position:outside;
+    background-color: red;
+} */
+
+/* .BMW{
+    list-style-position: inside;
+
+} */
 
 /* ?Liste Stili Shorthand özelliği*/
 /* !Tüm list-styleliste özelliklerini şu sırayla tek bir bildirimde ayarlamak için kullanılır:
@@ -33,7 +42,43 @@ list-style-type
 list-style-position
 list-style-image  */
 
-ul{
+/* ul{
     list-style: circle inside;
     list-style: lower-alpha inside url(./2022-08-10\ \(1\).png);
+} */
+
+/* li::before{
+    content: "\2764"; */
+    /* content ile içerik ekliyoruz. */
+    /* color: tomato;
+    padding-right: 10px;
+} */
+
+
+/* ol{
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
+} */
+
+/* ol li{
+    border: 1px solid darkorange;
+    border-radius: 25px;
+    margin: 10px;
+    padding-left: 1rem;
+    background-color: lightgreen;
+    border-left: 7px solid gray;
+    color: brown;
+    width: 15rem;
+    /* display: inline-block; */
+} */
+
+/* ol li:hover{
+    background-color: gray;
+    color: lightgreen;
+    border-left: 7px solid lightgreen;
+    cursor: pointer;
 }
+ol li::before{
+    content: "☃️";
+} */

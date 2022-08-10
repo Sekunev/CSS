@@ -1,9 +1,11 @@
 /* *********!display ( görüntü özellikleri) Kullanımı.******** */
 
+/* ?display Özelliği: Bir öğenin nasıl görüntüleneceğini belirler. */
+
 a{
     background-color: rgb(216, 9, 26);
     text-decoration: none;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     color: rgb(250, 246, 246);
     font-size: 30px;
@@ -12,27 +14,50 @@ a{
 a{
     /* display: none; */
     /* display: block; */
-    /* !a'ları tek bir blokta toplar. a inline bir elemen olduğu için değere inline yazdığımızda değişiklik olmaz.*/
-    /* visibility: hidden; */
-    /* ? visibility ile öğe yine de eskisi gibi aynı alanı kaplayacaktır. Öğe gizlenecek, ancak yine de düzeni etkileyecek: */
+    /* !a'ları blok eleman yapar. a inline bir elemen olduğu için değere inline yazdığımızda değişiklik olmaz.*/
     /* display: inline; */
-    /*!div inline olduğu için bütün divler aynı satırda toplanır.*/
-    /* display: flex; */
-    /* display: block; */
+    /*? inline'e çevirdiğimizde genişlik yükseklik veremeyiz.  */
+    /* width: 100px;
+    height: 50px; */
+
+
     
 }
-div{
+#a1{
     /* display: none; */
-    /* Bir öğeyi gizleme, display özelliği none olarak ayarlanarak yapılabilir. Öğe gizlenecek ve sayfa, öğe orada değilmiş gibi görüntülenecektir: */
     /* visibility: hidden; */
-    /* ? visibility ile öğe yine de eskisi gibi aynı alanı kaplayacaktır. Öğe gizlenecek, ancak yine de düzeni etkileyecek: */
-    /* display: inline; */
-    /*!div inline olduğu için bütün divler aynı satırda toplanır.*/
+    /* ? visibility hidden ile öğe yine de eskisi gibi aynı alanı kaplayacaktır. sadece öğe gizlenecek, silüeti yerinde duracaktır.: */
+    /* display: inline-block; */
+    /* !genişlik yükseklik vermek istiyorsak  inline-block değerini kullanmalıyız. */
+    /* width: 120px;
+    height: 50px; */
     /* display: block; */
-    /* ?block haline çevirdiğimizde tek bir blokta topladı. */
-    /* display: flex; */
-    /* display: block; */
-
 }
+
+/* span{
+    background-color: orange;
+    margin: 50px;
+    padding: 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+} */
+
+/* .box{
+    width: 100px;
+    height: 100px;
+    background-color: darkorchid;
+    border: 2px solid red;
+    margin-top: 5px;
+    display:inline;
+    display: block;
+    /* blok elemanı inline'e çevirdiğimizde content'i kadar yer kaplar. */
+}
+#box2{
+    background-color: cyan;
+    /* display: none; */
+    /* visibility: hidden; */
+    
+} */
 
 

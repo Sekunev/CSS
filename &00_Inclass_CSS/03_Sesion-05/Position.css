@@ -7,16 +7,22 @@ z-index üst üste gelen bölüümlerin hangisinin öne çıkmasını istiyorsak
 /* absolute: değeri verildiğinde parant'da relatif arar bulursa parent'a göre top-left... konumlanır. bulmazsa body'e göre konumlanır.*/
 /* sticky: ile ekran aşağı doğru kayarken hangi içeriğe bu değeri verdiysek o içeriğe sıra geldiğinde ekranın belirlediğimiz yerinde sabit kalır. parent içeriği bitene kadar orada sabit kalır. top ile değer vermeyi unutma. k*/
 
+/* -absolut kullanacağımız zaman kapsayıcı div relatif olması gerekir.
+vermezsek body'ye göre konumladır. Kontrol işlemi relatif bulana kadar devam eder bulamazsa body'e gider. 
+-position kullanıldıysa z-index kullanılır. hangisi üstte olmasını istiyorsak onun değerini daha yüksek vermeliyiz. */
+
 html{
     height: 2000px;
 }
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
 }
 #container1{
-    /* margin-top: 200px; */
+    /* margin-top: 100px; */
     /* position: relative; */
+    height: 1000px;
+    background-color: aquamarine;
 }
 
 .box {
@@ -30,13 +36,18 @@ html{
     background: #feb236;
     /* position: fixed; */
     /* width: 100%; */
-    /* top: 0; */
+    /* top: 10px; */
+    /* bottom: 0px; */
     /* z-index: +1; */
 }
 .content {
     background: #d64161;
-    /* position: sticky; */
-    /* top: 100px; */
+    /* position: static; */
+    /* position: relative; */
+    /* top: 10px; */
+    /* left: 20px; */
+    /* position: sticky;
+    top: 100px; */
     /* position: absolute; */
     /* content'e absulute değerini verdiğimde akıştan çıktığı için foter content'in yerini aldı. content'de içeriği kadar yer kaplar. genişlik verilerek büyütülebilir. */
     /* top: 0; */
@@ -49,8 +60,9 @@ html{
 .footer {
     background: #ff7b25;
     /* position: absolute; */
-    /* top: 0; */
-    /* width: 100%; */
+    /* top: 300px;
+    left: 50px;
+    width: 50%; */
 
 
 }
