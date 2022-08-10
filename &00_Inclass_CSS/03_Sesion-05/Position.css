@@ -1,0 +1,56 @@
+/* *********!Position ( bir öğe için kullanılan konumlandırma yönteminin türünü ayarlar.) Kullanımı.******** */
+/* ?Beş farklı konum değeri vardır: */
+/* static: TML öğeleri varsayılan olarak statik olarak konumlandırılır. */
+/* relative: sayfadaki akışı bozulmaz top left ile akışda bulunduğu yere göre konumlandırabiliriz. */
+/* fixed: görüntü alanına (viewport) göre konumlandırılır, yani sayfa kaydırılsa bile her zaman aynı yerde kalır. Elemanı konumlandırmak için üst, sağ, alt ve sol özellikler kullanılır. bu değer verildiğinde de akışdan çıkar. margin ile yeniden konumlandırılabilir. 
+z-index üst üste gelen bölüümlerin hangisinin öne çıkmasını istiyorsak ona bu değeri veriyoruz. z-index verdiğimiz değere + değer verirsek üste çıkar - verirsek alta iner.*/
+/* absolute: değeri verildiğinde parant'da relatif arar bulursa parent'a göre top-left... konumlanır. bulmazsa body'e göre konumlanır.*/
+/* sticky: ile ekran aşağı doğru kayarken hangi içeriğe bu değeri verdiysek o içeriğe sıra geldiğinde ekranın belirlediğimiz yerinde sabit kalır. parent içeriği bitene kadar orada sabit kalır. top ile değer vermeyi unutma. k*/
+
+html{
+    height: 2000px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+#container1{
+    /* margin-top: 200px; */
+    /* position: relative; */
+}
+
+.box {
+    padding: 20px;
+    border: 10px solid #6d5b95;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.navbar {
+    background: #feb236;
+    /* position: fixed; */
+    /* width: 100%; */
+    /* top: 0; */
+    /* z-index: +1; */
+}
+.content {
+    background: #d64161;
+    /* position: sticky; */
+    /* top: 100px; */
+    /* position: absolute; */
+    /* content'e absulute değerini verdiğimde akıştan çıktığı için foter content'in yerini aldı. content'de içeriği kadar yer kaplar. genişlik verilerek büyütülebilir. */
+    /* top: 0; */
+    /* bottom: 0; */
+    /* right: 0; */
+    /* left: 0; */
+    /* margin-top: 200px; */
+
+}
+.footer {
+    background: #ff7b25;
+    /* position: absolute; */
+    /* top: 0; */
+    /* width: 100%; */
+
+
+}

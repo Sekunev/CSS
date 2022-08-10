@@ -1,0 +1,38 @@
+/* *********!display ( görüntü özellikleri) Kullanımı.******** */
+
+a{
+    background-color: rgb(216, 9, 26);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(250, 246, 246);
+    font-size: 30px;
+}
+
+a{
+    /* display: none; */
+    /* display: block; */
+    /* !a'ları tek bir blokta toplar. a inline bir elemen olduğu için değere inline yazdığımızda değişiklik olmaz.*/
+    /* visibility: hidden; */
+    /* ? visibility ile öğe yine de eskisi gibi aynı alanı kaplayacaktır. Öğe gizlenecek, ancak yine de düzeni etkileyecek: */
+    /* display: inline; */
+    /*!div inline olduğu için bütün divler aynı satırda toplanır.*/
+    /* display: flex; */
+    /* display: block; */
+    
+}
+div{
+    /* display: none; */
+    /* Bir öğeyi gizleme, display özelliği none olarak ayarlanarak yapılabilir. Öğe gizlenecek ve sayfa, öğe orada değilmiş gibi görüntülenecektir: */
+    /* visibility: hidden; */
+    /* ? visibility ile öğe yine de eskisi gibi aynı alanı kaplayacaktır. Öğe gizlenecek, ancak yine de düzeni etkileyecek: */
+    /* display: inline; */
+    /*!div inline olduğu için bütün divler aynı satırda toplanır.*/
+    /* display: block; */
+    /* ?block haline çevirdiğimizde tek bir blokta topladı. */
+    /* display: flex; */
+    /* display: block; */
+
+}
+
+

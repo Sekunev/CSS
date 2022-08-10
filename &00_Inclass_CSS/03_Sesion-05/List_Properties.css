@@ -1,0 +1,39 @@
+/* *********!list-style-type ( işaretçisinin türünü ayarlar) Kullanımı.******** */
+/* ?(ordered) sıralı ve (unordered) sırasız listelerde kullanılabilir. */
+
+ul{
+    list-style-type:none;
+    list-style-type: decimal;     list-style-type: disc; 
+    list-style-type: decimal-leading-zero;
+    list-style-type: armenian;
+    list-style-type: lower-alpha;
+    list-style-type: lower-greek;
+    list-style-type: lower-latin;
+    list-style-type: lower-roman;
+    list-style-type: square;
+    list-style-type: georgian; 
+
+}
+
+/* *********!list-style-type image (işaretçisinin görüntü olmasını ayarlar)Kullanımı.******** */
+
+ul{
+    list-style-image: url(./2022-08-10\ \(1\).png);
+}
+
+/* *********!list-style-type position (işaretçilerinin konumunu ayarlar.) Kullanımı.******** */
+
+ul{
+    list-style-position:inside ;
+}
+
+/* ?Liste Stili Shorthand özelliği*/
+/* !Tüm list-styleliste özelliklerini şu sırayla tek bir bildirimde ayarlamak için kullanılır:
+list-style-type
+list-style-position
+list-style-image  */
+
+ul{
+    list-style: circle inside;
+    list-style: lower-alpha inside url(./2022-08-10\ \(1\).png);
+}
