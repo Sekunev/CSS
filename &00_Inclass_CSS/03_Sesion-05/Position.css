@@ -38,7 +38,7 @@ html{
     /* width: 100%; */
     /* top: 10px; */
     /* bottom: 0px; */
-    /* z-index: +1; */
+    /* z-index: -1; */
 }
 .content {
     background: #d64161;
@@ -46,14 +46,14 @@ html{
     /* position: relative; */
     /* top: 10px; */
     /* left: 20px; */
-    /* position: sticky;
-    top: 100px; */
+    /* position: sticky; */
+    /* top: 100px; */
     /* position: absolute; */
     /* content'e absulute değerini verdiğimde akıştan çıktığı için foter content'in yerini aldı. content'de içeriği kadar yer kaplar. genişlik verilerek büyütülebilir. */
     /* top: 0; */
     /* bottom: 0; */
     /* right: 0; */
-    /* left: 0; */
+    /* left: 100px; */
     /* margin-top: 200px; */
 
 }

@@ -2,8 +2,9 @@
 /* ?(ordered) sıralı ve (unordered) sırasız listelerde kullanılabilir. */
 
 ul{
-    list-style-type:none;
-    /* list-style-type: decimal;     list-style-type: disc;  */
+    /* list-style-type: decimal; */
+    /* list-style-type: disc;  */
+    /* list-style-type:none; */
     /* list-style-type: decimal-leading-zero; */
     /* list-style-type: armenian; */
     /* list-style-type: lower-alpha; */
@@ -14,7 +15,7 @@ ul{
     /* list-style-type: georgian;  */
     /* https://unicode-table.com/en/sets/emoji/ 
     buradan emoji alınabilir. ayrıca "windows+." kullanılabilir. */
-    /* list-style-type:"\1F608"; */
+    /* list-style-type:"\1F680"; */
 
 }
 
@@ -28,12 +29,16 @@ ul{
 
 /* ul{
     list-style-position:outside;
-    background-color: red;
-} */
+    /* background-color: red; */
+    /* border: 1px solid red; */
+
+/* } */
 
 /* .BMW{
     list-style-position: inside;
-
+    border: 1px solid grey;
+    padding-left: 5px;
+    padding: 0px;
 } */
 
 /* ?Liste Stili Shorthand özelliği*/
@@ -43,7 +48,7 @@ list-style-position
 list-style-image  */
 
 /* ul{
-    list-style: circle inside;
+    /* list-style: circle inside; */
     list-style: lower-alpha inside url(./2022-08-10\ \(1\).png);
 } */
 
@@ -55,13 +60,13 @@ list-style-image  */
 } */
 
 
-/* ol{
+ol{
     list-style-type: none;
     margin: 5px;
     padding: 5px;
-} */
+}
 
-/* ol li{
+ol li{
     border: 1px solid darkorange;
     border-radius: 25px;
     margin: 10px;
@@ -71,9 +76,9 @@ list-style-image  */
     color: brown;
     width: 15rem;
     /* display: inline-block; */
-} */
+}
 
-/* ol li:hover{
+ol li:hover{
     background-color: gray;
     color: lightgreen;
     border-left: 7px solid lightgreen;
@@ -81,4 +86,4 @@ list-style-image  */
 }
 ol li::before{
     content: "☃️";
-} */
+}
