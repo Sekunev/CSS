@@ -34,15 +34,17 @@ inherit - Öğe, ebeveyninin net değerini devralır. */
     height: 200px;
     /* display: block; */
     /* display: inline; */
-    float: right;
+    /* float: right; */
 
 }
 #box1{
-    /* float: left; */
+    float: right;
 }
 
-.clearfix::after {
+/* .clearfix::after {
     content: "";
     display: block;
     clear: both;
-}
+} */
+
+

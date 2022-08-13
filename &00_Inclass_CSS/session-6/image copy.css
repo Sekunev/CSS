@@ -1,0 +1,61 @@
+body{
+    /* background-image: url(./img/stock-photo-109292217.jpg); */
+}
+
+.container{
+
+    width: 40rem;
+    height: 20rem;
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+
+    /* opacity: 0.5; */
+}
+
+#paragraf{
+    color: rgba(255, 255, 255, 1);
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#paragraf span{
+    font-size: 0.8em;
+    /* display: inline; */
+}
+
+img{
+    width: 20%;
+}
+
+#img1{
+    opacity: 0.3;
+}
+#img1:hover{
+    opacity: 1;
+    transition: all ease-in-out 1s;
+}
+#img3{
+    opacity: 0.3;
+}
+#img3:hover{
+    opacity: 1;
+    transition: all ease-in-out 400ms;
+}
+#img4{
+    opacity: 0.3;
+}
+#img4:hover{
+    opacity: 1;
+    transition: all ease-in-out 400ms;
+}
+#img5{
+    opacity: 0.3;
+}
+#img5:hover{
+    opacity: 1;
+    transition: all ease-in-out 400ms;
+}
