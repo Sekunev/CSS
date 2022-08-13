@@ -1,0 +1,30 @@
+/* *********!Opacity (opaklık) Kullanımı.******** */
+
+#header{
+    position: relative;
+    background-image: 
+    linear-gradient( #ff0000, yellow), 
+    url("https://images.pexels.com/photos/258109/pexels-photo-258109.jpeg?cs=srgb&dl=pexels-pixabay-258109.jpg&fm=jpg");
+
+    height: 100vh;
+    /* opacity: 0.5; */
+}
+#header h1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 80px;
+    color: red;
+    transform: translate(-50%, -50%);
+
+}
+/* .cover{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(216, 14, 14);
+    opacity: 0.5;
+} */

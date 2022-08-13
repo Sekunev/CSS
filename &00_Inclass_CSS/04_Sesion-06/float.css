@@ -1,0 +1,48 @@
+/* *********!float (yüzdürmek) Kullanımı.******** */
+
+/* todo Float özelliği, içeriği konumlandırmak ve biçimlendirmek için kullanılır. Float özelliği aşağıdaki değerlerden birine sahip olabilir: */
+/* * left: Öğe, bulunduğu kabın solunda yüzer */
+
+/* * right: Öğe, bulunduğu kabın sağında yüzer */
+
+/* * none: Varsayılan. Öğe yüzmez. */
+
+/* * inherit: Öğe, ebeveyninin float değerini devralır */
+
+/* ? clear özelliği, temizlenen öğenin yanında ve hangi tarafta hangi öğelerin yüzebileceğini belirtir. clear özelliği aşağıdaki değerlerden birine sahip olabilir.*/
+
+/* clear uygulamanın 2 yolu var. 
+1. Yol: html'de float uyguladığımız div'in en altına yeni bir div ekleyip style'ını clear yapmak.
+2. Yol: clearfix isimli bir class oluşturarak aşağıdaki değerleri vererek yapmak.*/
+
+/* none - Her iki tarafta da kayan öğelere izin verir. Bu varsayılan
+left -  Sol tarafta kayan öğelere izin verilmez
+right-  Sağ tarafta kayan öğelere izin verilmez
+both - Sol veya sağ tarafta kayan öğelere izin verilmez
+inherit - Öğe, ebeveyninin net değerini devralır. */
+
+#container{
+    /* float: right; */
+    /** float verdiğimizde blok özelliğini kaybediyor. genişlik ve yüksekliğini koruyarak istediğimiz yöne yanaşıyor.*/
+    background-color: chocolate;
+}
+
+.box {
+    background-color: rgb(139, 194, 108);
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    /* display: block; */
+    /* display: inline; */
+    float: right;
+
+}
+#box1{
+    /* float: left; */
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

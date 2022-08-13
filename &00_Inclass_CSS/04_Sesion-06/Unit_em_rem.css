@@ -1,0 +1,54 @@
+/* *********!Unit_em_rem  Kullanımı.******** */
+
+/* ?İki tür uzunluk birimi vardır: absolute ve relative. */
+
+/*! Absolute Lengths */
+/* Mutlak uzunluk birimleri sabittir ve bunlardan herhangi birinde ifade edilen bir uzunluk tam olarak bu boyutta görünecektir.
+Ekran boyutları çok farklı olduğundan, mutlak uzunluk birimlerinin ekranda kullanılması önerilmez. Ancak, çıktı ortamı biliniyorsa, örneğin baskı düzeni için kullanılabilirler. */
+
+
+/* Unit	Description
+cm	    centimeters
+mm	    millimeters
+in	    inches (1in = 96px = 2.54cm)
+px *	pixels (1px = 1/96th of 1in)
+pt	    points (1pt = 1/72 of 1in)
+pc	    picas (1pc = 12 pt) */
+
+/* * Piksel (px) görüntüleme cihazına göredir. Düşük dpi cihazlar için 1 piksel, ekranın bir cihaz pikselidir (nokta). Yazıcılar ve yüksek çözünürlüklü ekranlar için 1 piksel, birden çok aygıt pikseli anlamına gelir. */
+
+/*! Relative Lengths */
+
+/* ?Göreli uzunluk birimleri, başka bir uzunluk özelliğine göre bir uzunluk belirtir. Göreceli uzunluk birimleri, farklı oluşturma ortamları arasında daha iyi ölçeklenir. */
+
+/* Unit	Description	
+em	    Öğenin yazı tipi boyutuna göre (2em, geçerli yazı tipinin boyutunun 2 katı anlamına gelir)font)	
+ex	    Geçerli yazı tipinin x yüksekliğine göre (nadiren kullanılır)	
+ch	    "0" (sıfır) genişliğine göre	
+rem	    Kök öğenin yazı tipi boyutuna göre
+vw	    Görünüm alanının genişliğinin %1'ine göre*	
+vh	    Görüntü alanının yüksekliğinin %1'ine göre*	
+vmin	Görünüm alanının* daha küçük boyutunun %1'ine göre
+vmax	Görünüm alanının* daha büyük boyutunun %1'ine göre	
+%	    Ana öğeye göre */
+
+/* İpucu: em ve rem birimleri, mükemmel şekilde ölçeklenebilir bir düzen oluşturmada pratiktir! */
+/* * Viewport = tarayıcı penceresi boyutu. Görünüm alanı 50cm genişliğindeyse, 1vw = 0,5cm'dir. */
+
+body{
+    /* font-size: 10px; */
+}
+#kutu-1{
+    font-size: 20px;
+}
+#kutu-1 p {
+    /* font-size: 1.5em; */
+
+}
+h2 {
+    /* font-size: 2em; */
+}
+h3 {
+    font-size: 2rem;
+}
+ 

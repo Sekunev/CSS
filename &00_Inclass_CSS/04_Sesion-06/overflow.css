@@ -1,0 +1,32 @@
+/* *********!Overflow ( görüntü özellikleri) Kullanımı.******** */
+
+/* todo Taşma özelliği aşağıdaki değerlere sahiptir: */
+/* * visible: Varsayılan. Taşma kırpılmamış. İçerik, öğenin kutusunun dışında işleniyor */
+
+/* * hidden: Taşma kırpılır ve içeriğin geri kalanı görünmez olur */
+
+/* * scroll: Taşma kırpılır ve içeriğin geri kalanını görmek için bir kaydırma çubuğu eklenir */
+
+/* * auto: Kaydırmaya benzer, ancak yalnızca gerektiğinde kaydırma çubukları ekler */
+
+/* * overflow-x ve overflow-y özellikleri, içeriğin taşmasının sadece yatay mı yoksa dikey mi (veya her ikisi) mi değiştirileceğini belirtir: */
+
+div {
+    background-color: rgb(223, 202, 204);
+    font-size: 20px;
+    width: 200px;
+    height: 300px;
+    overflow: visible;
+    /* ?varsayılandır. İçerik, öğenin kutusunun dışına taşıyor. */
+    /* overflow: hidden; */
+    /* ?Taşma kırpılır ve içeriğin geri kalanı görünmez olur */
+    /* overflow: scroll; */
+    /* ?Taşma kırpıldı ve içeriğin geri kalanı için bir kaydırma çubuğu eklendi. */
+    /* overflow: auto; */
+    /* ?yüksekliği kısıtlayarak 300px verdiğimiz için 300px sonrasını görebilmek için scroll ekledi. */
+    /* overflow-x: scroll; */
+    /* ?genişlik divin içerisine sığmadığında taşmaları önlemek için hidden'le gizleme veya scroll ile kayan çubuk koyarak taşan kısmı sadece yatay eksende şekillendirebiliriz. */
+    /* overflow-y: hidden; */
+    /* dikey taşmayı ayarlarız. */
+
+}
