@@ -1,0 +1,73 @@
+/* *********!Combinators ( birleştiriciler) Kullanımı.******** */
+
+/*? Bir combinator , selector ların ilişkisini tanımlayan bir şeydir. */
+/* CSS'nin dört farklı combinator'ı vardır::
+
+descendant (torun) selector (space)
+
+child (çocuk) selector (>)
+
+adjacent sibling (komşu kardeş) selector (+)
+
+general sibling (genel kardeş) selector (~)
+*/
+
+/*! descendant (torun) selector (space) */
+
+
+/*! kutu class'ı icerisinde tüm p'leri sec */
+/* .kutu p {} */
+
+div p {
+    /* background-color: antiquewhite; */
+    /* div etiketleri altındaki tüp p etiketler. Çocuk Torun dahiil. */
+}
+
+/*! child (çocuk) selector (>) */
+
+/*! parent'i kutu class olan tüm p'leri seç */
+/* .kutu > p {} */
+
+div > p {
+    /* background-color: antiquewhite; */
+    /* Torunları dahil etmedi sadece çocuklar seçild.*/
+}
+
+/*! adjacent sibling (komşu kardeş) selector (+) */
+
+/*! h1 elementi kapandiktan sonraki ilk p elementi secer */
+/* h1 + p {} */
+
+div + p {
+    background-color: rgb(252, 62, 5);
+    /* div etiketinden sonra gelen ilk p etiketi demiş olduk. adından da anlaşılacağı gibi komşu kardeş yani yan yana olan elemanlar.*/
+}
+
+/*! general sibling (genel kardeş) selector (~) */
+
+/*! h1 elementinden sonraki tüm p elementlerini seçer */
+h1 ~ p {}
+
+div ~ p {
+    /* background-color: rgb(252, 62, 5); */
+    /* div etiketinden sonra gelen bütün p etiketi demiş olduk. adından da anlaşılacağı gibi genel kardeş; yani yan yana olan tüm elemanlar.*/
+}
+
+/* nav.navbar div a {} --> classı navbar olan navın altındaki divin altındaki a
+.navbar div a {} -->  navbar classı nın altındaki divin altındaki a yukardaki ile aynı şey.
+nav .list a {} ---> nav etiketi altındaki clası list olan a 'lar.' */
+
+.kutu p {
+    /* color: red; */
+}
+.kutu > p {
+    /* color: green; */
+}
+h1 + p {
+    color: rgb(213, 250, 6);
+}
+
+h1 ~ p {
+    color: blue;
+}
+

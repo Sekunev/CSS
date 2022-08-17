@@ -1,0 +1,38 @@
+/* *********!height_width ( görüntü özellikleri) Kullanımı.******** */
+
+/*? Yükseklik ve genişlik özellikleri, bir elemanın yüksekliğini ve genişliğini ayarlamak için kullanılır.: */
+/* Yükseklik ve genişlik özellikleri, dolgu, kenarlıklar veya kenar boşluklarını içermez.
+
+Yükseklik ve genişlik özellikleri aşağıdaki değerlere sahip olabilir:
+
+auto - Bu varsayılandır. Tarayıcı yüksekliği ve genişliği hesaplar
+length  - Yüksekliği/genişliği px, cm vb. cinsinden tanımlar.
+% - İçerdiği bloğun yüksekliğini/genişliğini yüzde olarak tanımlar
+initial - Yüksekliği/genişliği varsayılan değerine ayarlar
+inherit - Yükseklik/genişlik üst değerinden devralınır*/
+
+*{
+    margin: 0;
+}
+html{
+    height: 100%;
+    /* vp'un %100'ü olacak şekilde bir yükseklik verdi. */
+}
+body{
+    height: 100%;
+}
+main{
+    width: 500px;
+    height: 100px;
+    /* height: 100px; */
+}
+
+#wel {
+    background-color: blueviolet;
+    width: 50%;
+    /* height: 50px; */
+    height: 100%;
+}
+#to {
+    background-color: darkgoldenrod;
+}

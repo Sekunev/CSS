@@ -51,4 +51,15 @@ h2 {
 h3 {
     font-size: 2rem;
 }
+
+#wel {
+    background-color: blueviolet;
+    /* width: 2rem; */
+    width: 50%;
+    /* genişlikte em rem kullanılmaz paren'e göre ayarlama yapabilnmesi için % ile değer verilmeli. */
+}
+#to {
+    background-color: darkgoldenrod;
+    width: 75%;
+}
  

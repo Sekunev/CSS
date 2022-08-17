@@ -1,0 +1,90 @@
+/* *********!outline ( görüntü özellikleri) Kullanımı.******** */
+
+/*? Anahat, öğenin sınırlarının dışında kalan bir çizgidir. Anahatlar border dan farklıdır.: */
+/* CSS'nin 5 anahat özelliği vardır:
+
+outline-style
+outline-color
+outline-width
+outline-offset
+offset çizginin bordor'a olan mesafesini ayarlar.
+outline
+
+CSS Anahat Stilleri
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+outset
+none
+hidden
+*/
+
+*{
+    margin: 0;
+}
+
+main{
+    width: 500px;
+    height: 100px;
+    /* height: 100px; */
+}
+
+#wel {
+    background-color: rgb(180, 192, 147);
+    height: 100px;
+    margin: 10%;
+    outline-style: inset;
+    outline-color: red;
+    outline-offset: 0px;
+
+
+}
+#to {
+    background-color: rgb(109, 156, 197);
+    height: 100px;
+    margin: 10%;
+    outline-style: outset;
+    outline-width: 8px;
+    outline-color: rgb(109, 156, 197);
+    outline-offset: 10px;
+
+}
+#to1 {
+    background-color: rgb(109, 156, 197);
+    height: 100px;
+    margin: 10%;
+    outline: dotted;
+
+
+}
+#to2 {
+    background-color: rgb(109, 156, 197);
+    height: 100px;
+    margin: 10%;
+    outline-style: double;
+    outline-width: 8px;
+    outline-color: rgb(110, 19, 69);
+    outline-offset: 4px;
+
+}
+#to3 {
+    background-color: rgb(109, 156, 197);
+    height: 100px;
+    margin: 10%;
+    outline-style: ridge;
+    outline-width: 8px;
+    outline-color: rgb(175, 126, 65);
+    outline-offset: 4px;
+
+}
+h1{
+    padding: 40px 150px;
+
+
+
+
+}
