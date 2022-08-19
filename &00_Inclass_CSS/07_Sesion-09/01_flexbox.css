@@ -1,0 +1,40 @@
+/* *********!Flexbox ( görüntü özellikleri) Kullanımı.******** */
+
+/*? Conteiner ve içerisindeki ögelere uygulanan flex özelliği olmak üzere 2 bölümde incelenecektir. */
+/* CSS'nin 5 anahat özelliği vardır:*/
+
+.container{
+    display: flex;
+    /*! ***flex-direction*** */
+    /* display'e flex verince inline-blok gibi hareket eder. */
+    /* flex-direction: row; */
+    /* flex-direction defaultu row'dur. satırda sırala anlamını taşır. */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* satır olarak sıraladı ama tersten. */
+    /* flex-direction: column-reverse; */
+    /* stunu tersten sıraladı. */
+    /*! ***flex-wrap*** */
+    /* flex-wrap: nowrap; */
+    /* sayfa küçülsede aşağıda çıkan scrollbar sayesinde ekran kaydırılarak öğelere ulaşılır. */
+    /* flex-wrap: wrap; */
+    /* wrap özelliğini verdiğimizde scrollbar oluşmaz içerik sayfa küçüldükçe aşağı doğru iner. Bu responsive tasarımda kullanılabilir.*/
+    /* flex-wrap: wrap-reverse; */
+    /* wrap-reverse ile elemanları tersen görüntüleyerek wrap özelliğini uygular. */
+    /*! ***flex-flow*** */
+    /* flex-flow: row wrap; */
+    /* direction ve wrap özelliğinin aynı anda kullanılmasına imkan verir. */
+
+
+    background-color: blue;
+    padding: 15px;
+}
+.item{
+
+
+    background-color: red;
+    padding: 30px;
+    margin: 20px;
+    color: white;
+    font-size: 25px;
+}

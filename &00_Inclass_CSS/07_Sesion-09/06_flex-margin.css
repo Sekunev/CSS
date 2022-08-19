@@ -1,0 +1,35 @@
+/* *********!Flexbox ( görüntü özellikleri) Kullanımı.******** */
+
+/*? Conteiner ve içerisindeki ögelere uygulanan flex özelliği olmak üzere 2 bölümde incelenecektir. */
+/* CSS'nin 5 anahat özelliği vardır:*/
+
+.container{
+    display: flex;
+
+    background-color: blue;
+    height: 500px;
+
+    /* align-items: center;
+    justify-content: center; */
+}
+.item{
+    background-color: red;
+    padding: 30px;
+    margin: 20px;
+    color: white;
+    font-size: 25px;
+    /* margin: auto; */
+
+    /* margin-bottom: auto; */
+
+
+}
+.item1{
+    /* margin: auto; */
+    margin-left: auto;
+    margin-top: auto;
+}
+.item2{
+    margin-right: auto;
+    margin-top: auto;
+}

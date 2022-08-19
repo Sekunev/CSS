@@ -11,58 +11,73 @@ z-index üst üste gelen bölüümlerin hangisinin öne çıkmasını istiyorsak
 vermezsek body'ye göre konumladır. Kontrol işlemi relatif bulana kadar devam eder bulamazsa body'e gider. 
 -position kullanıldıysa z-index kullanılır. hangisi üstte olmasını istiyorsak onun değerini daha yüksek vermeliyiz. */
 
-html{
-    height: 2000px;
+html {
+  height: 2000px;
 }
-*{
-    /* box-sizing: border-box; */
-    margin: 0;
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
 }
-#container1{
-    /* margin-top: 100px; */
-    /* position: relative; */
-    height: 1000px;
-    background-color: aquamarine;
+#container1 {
+  /* margin-top: 100px; */
+  /* position: relative; */
+  height: 1000px;
+  background-color: aquamarine;
 }
 
 .box {
-    padding: 20px;
-    border: 10px solid #6d5b95;
-    margin-bottom: 10px;
-    font-size: 30px;
+  padding: 20px;
+  border: 10px solid #6d5b95;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 
 .navbar {
-    background: #feb236;
-    /* position: fixed; */
-    /* width: 100%; */
-    /* top: 10px; */
-    /* bottom: 0px; */
-    /* z-index: -1; */
+  background: #feb236;
+  /* position: fixed; */
+  /* width: 100%; */
+  /* top: 10px; */
+  /* bottom: 0px; */
+  /* z-index: -1; */
 }
 .content {
-    background: #d64161;
-    /* position: static; */
-    /* position: relative; */
-    /* top: 10px; */
-    /* left: 20px; */
-    /* position: sticky; */
-    /* top: 100px; */
-    /* position: absolute; */
-    /* content'e absulute değerini verdiğimde akıştan çıktığı için foter content'in yerini aldı. content'de içeriği kadar yer kaplar. genişlik verilerek büyütülebilir. */
-    /* top: 0; */
-    /* bottom: 0; */
-    /* right: 0; */
-    /* left: 100px; */
-    /* margin-top: 200px; */
-
+  background: #d64161;
+  /* position: static; */
+  /* position: relative; */
+  /* top: 10px; */
+  /* left: 20px; */
+  /* position: sticky; */
+  /* top: 100px; */
+  /* position: absolute; */
+  /* content'e absulute değerini verdiğimde akıştan çıktığı için foter content'in yerini aldı. content'de içeriği kadar yer kaplar. genişlik verilerek büyütülebilir. */
+  /* top: 0; */
+  /* bottom: 0; */
+  /* right: 0; */
+  /* left: 100px; */
+  /* margin-top: 200px; */
 }
 .footer {
-    background: #ff7b25;
-    /* position: absolute; */
-    /* top: 300px;
+  background: #ff7b25;
+  /* position: absolute; */
+  /* top: 300px;
     left: 50px;
     width: 50%; */
+}
 
-
+/*! Absulut ile ortalama sağ üst köşeye göre yapılır. 
+tam ortalama yapmak istiyorsak trasform translate ile kutu2 genişliğinin yarısı kadar aksi yönde taşıma yapmamız gerekiyor. */
+.kutu1 {
+  width: 800px;
+  height: 800px;
+  background-color: #feb236;
+  position: relative;
+}
+.kutu2 {
+  width: 300px;
+  height: 300px;
+  background-color: #87c08c;
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  transform: translate(-150px, -150px);
 }
