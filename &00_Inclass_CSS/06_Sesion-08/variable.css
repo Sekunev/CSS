@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&display=swap"); */
 
-/* Variable dosyası ayrıca oluşturulablir. bu durumda kullanılacak CSS daosyasında import edilmelidir. @import "dosya adı" --> aynı klasör içindeyse. değilse adres yazılır. ; */
+/*? Variable dosyası ayrıca oluşturulablir. bu durumda kullanılacak CSS daosyasında import edilmelidir. @import "dosya adı" --> aynı klasör içindeyse. değilse adres yazılır. ; */
 
 :root {
   /* Color Theme Swatches in Hex */

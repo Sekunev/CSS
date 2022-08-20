@@ -7,7 +7,7 @@
 /************ ROTATE **************/
 .yazi1 {
   background-color: greenyellow;
-  transform: rotateX(180deg);
+  transform: rotateX(-180deg);
   /*! 90 ve 270 derecelerde yazılar tam dik olduklarından ve 3-boyutlu olarak bakamadığımız için gözükmezler */
 }
 .yazi2 {
@@ -24,7 +24,7 @@
   background-color: indianred;
 }
 .yazi4:hover {
-  transform: scaleX(1.5) scaleY(3);
+  transform: scaleX(1.5) scaleY(2);
   cursor: pointer;
 }
 .yazi5 {
@@ -32,8 +32,9 @@
   cursor: pointer;
 }
 .yazi5:active {
-  transform: scale(1.1, 1.2);
-  transform: scale(92%);
+  /* transform: scale(1.1, 1.2); */
+  transform: scale(80%);
+  /*? değer azaldıkça küçülür */
 }
 /* ********* TRANSLATE -TRANSITION ************* */
 .translate {
@@ -52,7 +53,10 @@
   background-color: aqua;
 }
 .y:active {
-  transform: translateY(-150px);
+  /* transform: translateX(-50px); */
+  transform: translateY(-50px);
+  /* transform: translate(50px, 50px); */
+
   background-color: tomato;
 }
 .xy:active {
@@ -69,13 +73,14 @@
   border: none;
   background-color: gold;
   font-size: 1.2rem;
-  transition: background-color 1s, color 0.5s;
+  transition: color 0.5s;
   font-weight: 900;
 }
 .btn:hover {
   background-color: tomato;
   color: rgb(219, 209, 209);
   border-radius: 20%;
+  transition: background-color 5s;
 }
 .btn:active {
   transform: scale(95%);
