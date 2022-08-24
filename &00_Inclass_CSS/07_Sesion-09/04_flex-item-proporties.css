@@ -1,56 +1,51 @@
 /* *********!Flexbox ( görüntü özellikleri) Kullanımı.******** */
 
-/*? Conteiner ve içerisindeki ögelere uygulanan flex özelliği olmak üzere 2 bölümde incelenecektir. */
-/* CSS'nin 5 anahat özelliği vardır:*/
+/*? order özelliği, esnek öğelerin sırasını belirtir. Koddaki ilk esnek öğenin mizanpajdaki ilk öğe olarak görünmesi gerekmez. Sipariş değeri bir sayı olmalıdır , defaultdeğerdir :0.*/
 
-.container{
-    display: flex;
+/* flex-shrink özelliği, bir esnek öğenin geri kalan esnek öğelere göre ne kadar küçüleceğini belirtir. */
 
+.container {
+  display: flex;
 
-
-
-
-    background-color: blue;
-    height: 500px;
-    /* padding: 15px; */
+  background-color: blue;
+  height: 500px;
+  /* padding: 15px; */
 }
-.item{
-    background-color: red;
-    padding: 30px;
-    margin: 20px;
-    color: white;
-    font-size: 25px;
+.item {
+  background-color: red;
+  padding: 30px;
+  margin: 20px;
+  color: white;
+  font-size: 25px;
 
+  /* flex-grow: 1; */
+  /* varsayılanı 0'dır. 1 verdiğimizde conteiner genişliğinde kaplar. */
 
-    /* flex-grow: 1; */
-    /* varsayılanı 0'dır. 1 verdiğimizde conteiner genişliğinde kaplar. */
+  /* grow-shrink-basis özelliklerini tek satırda da verebiliriz. */
 
-    /* grow-shrink-basis özelliklerini tek satırda da verebiliriz. */
-
-    flex: 0 0 200px;
-    /* bu durumda 4 kutuda eşit 200px genişliğinde olur.  */
+  /* flex: 0 0 200px; */
+  /* bu durumda 4 kutuda eşit 200px genişliğinde olur.  */
 }
-.item1{
-    order: 4;
-    /* order'in default değeri 0'dır. */
-    flex-grow: 1;
-    flex: 25%;
-    /* genişliği % ilede dağıtabiliriz. */
-
+.item1 {
+  /* order: 0; */
+  /* order'in default değeri 0'dır. */
+  /* flex-grow: 1; */
+  /* flex: 25%; */
+  /* genişliği % ilede dağıtabiliriz. */
 }
-.item2{
-    order: 3;
-    /* flex-grow: 2; */
-    flex: 25%;
+.item2 {
+  /* order: 1; */
+  /* flex-grow: 2; */
+  /* flex: 25%; */
 }
-.item3{
-    /* flex-basis: 200px; */
-    /* item3 'e 200 px alan veriri diğerlerine kalanı dağıtır.'
+.item3 {
+  /* flex-basis: 200px; */
+  /* item3 'e 200 px alan veriri diğerlerine kalanı dağıtır.'
     grow'da sayfa küçüldüğünde oran miktarı küçülürme olurken basis'de olmaz. ne zaman 200px altına iner o zaman küçülme olur. eğer küçülme olmasını istemiyorsak shrink özelliğini uygularız. shrink'e 0 verirsek  */
-    /* flex-shrink: 0; */
-    flex: 50%;
+
+  /* flex: 50%; */
 }
-.item4{
-    flex-grow: -1;
-    flex: 25%;
+.item4 {
+  /* flex-grow: -1; */
+  /* flex: 25%; */
 }

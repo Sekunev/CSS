@@ -3,57 +3,52 @@
 /*? Conteiner ve içerisindeki ögelere uygulanan flex özelliği olmak üzere 2 bölümde incelenecektir. */
 /* CSS'nin 5 anahat özelliği vardır:*/
 
-.container{
-    display: flex;
-    flex-direction: column;
+.container {
+  display: flex;
+  flex-direction: column;
 
-    /*! ***justify-content*** */
-    /* justify-content ile align-items 'ın değerlerini center yaptığımızda içerik conteiner'ın merkezine alınmış olur. */
+  /*! ***justify-content*** */
+  /* justify-content ile align-items 'ın değerlerini center yaptığımızda içerik conteiner'ın merkezine alınmış olur. */
 
-    /* justify-content: center; */
-    /* satırı ortaladık. */
-    /* justify-content: flex-start; */
-    /* en başa alır. default özelliktir */
-    /* justify-content: flex-end; */
-    /* en sona aldı. */
+  /* justify-content: center; */
+  /* satırı ortaladık. */
+  /* justify-content: flex-start; */
+  /* en başa alır. default özelliktir */
+  /* justify-content: flex-end; */
+  /* en sona aldı. */
 
-    /* justify-content: space-around; */
-    /* aralara boşluk koyar başlangıç ve son x ise aralara 2x oranlaması ile. */
-    /* justify-content: space-between; */
-    /* sadece aralara boşluk verir. */
-    /* justify-content: space-evenly; */
-    /* baştan ve ortadan eşit boşlul.  */
+  /* justify-content: space-around; */
+  /* aralara boşluk koyar başlangıç ve son x ise aralara 2x oranlaması ile. */
+  /* justify-content: space-between; */
+  /* sadece aralara boşluk verir. */
+  /* justify-content: space-evenly; */
+  /* baştan ve ortadan eşit boşluk.  */
 
-    /* align-items: stretch; */
-    /* içeriğid container ile birlikte uzattı */
-    /* align-items: flex-start; */
-    /* bütün elemanlar içeriği kadar yer kaplar. */
-    /* align-items: flex-end; */
-    /* aşağıda konumlandı. */
-    /* align-items: center; */
-    /* merkeze alır */
-    /* align-items: flex-end; */
-    /* en aşağı aldı */
+  /*! align-items */
+  /* dikey hizalama. */
 
-    /*! aşağıdaki kodları     flex-direction: column; özelliği aktifken görebilirsin. */
-    align-items: flex-start;
-    justify-content: space-evenly;
-    align-items: center;
+  /* align-items: stretch; */
+  /* içeriğid container ile birlikte uzattı. Default değer */
+  /* align-items: flex-start; */
+  /* bütün elemanlar içeriği kadar yer kaplar. */
+  /* align-items: flex-end; */
+  /* aşağıda konumlandı. */
+  /* align-items: center; */
+  /* merkeze alır */
 
+  /*! aşağıdaki kodları     flex-direction: column; özelliği aktifken görebilirsin. */
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
 
-
-
-
-    background-color: blue;
-    height: 500px;
-    /* padding: 15px; */
+  background-color: blue;
+  height: 500px;
+  /* padding: 15px; */
 }
-.item{
-
-
-    background-color: red;
-    padding: 30px;
-    /* margin: 20px; */
-    color: white;
-    font-size: 25px;
+.item {
+  background-color: red;
+  padding: 30px;
+  /* margin: 20px; */
+  color: white;
+  font-size: 25px;
 }
