@@ -10,6 +10,8 @@
   /*! ***justify-content*** */
   /* justify-content ile align-items 'ın değerlerini center yaptığımızda içerik conteiner'ın merkezine alınmış olur. */
 
+  /* wrap özelliği açıksa justify-content kullanmak tercih edilmesi iyi olur. */
+
   /* justify-content: center; */
   /* satırı ortaladık. */
   /* justify-content: flex-start; */

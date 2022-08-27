@@ -1,0 +1,35 @@
+/* CSS'nin 5 anahat özelliği vardır:*/
+body {
+  margin: 0;
+}
+.container {
+  display: grid;
+  /* display: inline-grid; */
+
+  /* grid-template-columns: 150px 250px 100px 100px; */
+  /* grid-template-columns: 150px auto auto 150px; */
+  /* grid-template-columns: auto auto auto 10%; */
+  /* grid-template-columns: auto auto auto auto; */
+  /* yukardakinin aynısı aşağıda */
+  /* grid-template-columns: repeat(4, auto); */
+  /* grid-template-columns: repeat(4, 100px); */
+  /* grid-template-columns: 150px 200px 1fr 2fr; */
+  grid-template-columns: 150px 200px 1fr;
+  /* 350px den kalan alanı 1'e 2 oranında böler.  */
+
+  /* grid-template-rows: 200px 300px; */
+  grid-template-rows: 1fr 2fr;
+
+  grid-auto-rows: 3fr;
+  /* 1. satır 1, 2. satır 2, kalan saırlara 3 oranında yükseklik */
+
+  background-color: blue;
+  padding: 20px;
+}
+.item {
+  background-color: red;
+  padding: 30px;
+  margin: 20px;
+  color: white;
+  font-size: 25px;
+}

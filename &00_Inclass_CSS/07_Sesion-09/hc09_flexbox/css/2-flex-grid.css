@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
-  padding: 0;
+  padding: 0rem;
   margin: 0;
   font-size: 1rem;
   text-align: center;
+  color: white;
 }
 .container {
   width: 100%;
@@ -63,7 +64,7 @@
 }
 
 .logo {
-  background-color: hotpink;
+  background-color: rgb(65, 138, 160);
   padding: 1rem;
 }
 
@@ -73,5 +74,20 @@
 }
 .banner {
   background-color: turquoise;
+  padding: 4rem;
+}
+footer {
+  background-color: fuchsia;
   padding: 2rem;
+}
+.bolum1 {
+  background-color: rgb(69, 170, 56);
+  padding: 2rem;
+  height: calc(100vh - 330px);
+  border: 1px solid #ccc;
+}
+.bolum2 {
+  background-color: rgb(69, 170, 56);
+  padding: 1rem;
+  border: 1px solid #ccc;
 }

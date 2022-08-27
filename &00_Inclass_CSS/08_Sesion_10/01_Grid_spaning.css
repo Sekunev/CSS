@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  /* row-gap: 10px; */
+  /* column-gap: 10px; */
+
+  background-color: blue;
+  padding: 20px;
+}
+.item {
+  background-color: red;
+  padding: 30px;
+  /* margin: 20px; */
+  color: white;
+  font-size: 25px;
+}
+.item:first-child {
+  /* grid-row-start: 2;
+  grid-row-end: 4; */
+  /* yukardakileri tek satırda da yapabiliriz. */
+  /* grid-row: 2/4; */
+  /* yada bitiş noktasını belirtmek yerine span keyword'ü ile 2'den başla 2 colon daha git şeklinde de yapabiliriz. */
+  grid-row: 2 / span 2;
+
+  /* grid-column-start: 2;
+  grid-column-end: 4; */
+  /* yukardakileri tek satırda da yapabiliriz. */
+  /* grid-column: 2/4; */
+  grid-column: 2 / span 2;
+
+  grid-area: 2 / 2 / span 2 / span 3;
+}
