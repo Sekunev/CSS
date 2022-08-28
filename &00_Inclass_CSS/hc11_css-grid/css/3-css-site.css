@@ -11,8 +11,9 @@
 .content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   overflow: auto;
+  padding: 1rem;
 }
 
 .header {
@@ -23,7 +24,8 @@
 }
 nav {
   background-color: lightskyblue;
-  grid-column: span 12;
+  grid-column: 1 / span 12;
+  /* başlama yeri belirtilerek araya / koyularak'da yapılabilir. */
 }
 aside {
   background-color: lightyellow;
