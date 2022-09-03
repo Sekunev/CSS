@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+$bgColor1: #cccfff;
+$fontSize1: 1.3rem;
+$fontColor1: rgb(99, 135, 168);
+$genisliklogo: 80px;
+$bgBanner: pink;
+$bgBtnColor: #cccfff;
+$myBorder: 2px solid red;
+$myHeight: 15px;
+$bodyBg: #cccfbf;
+
+body {
+  background-color: $bodyBg;
+}
+
+header {
+  background-color: $bgColor1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: $fontSize1;
+  img {
+    width: $genisliklogo;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline-block;
+    padding: 0.5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $fontColor1;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2;
+  background-color: $bgBanner;
+  padding: 1.5rem;
+
+  img {
+    width: 30%;
+    min-width: 250px;
+    max-width: 400px;
+  }
+  aside {
+    button {
+      border-radius: 5px;
+      border: none;
+      margin-right: 1rem;
+      margin-top: 1rem;
+      padding: 0.8rem;
+      background-color: $bgBtnColor;
+
+      &:hover {
+        cursor: pointer;
+        background-color: hotpink;
+      }
+    }
+  }
+}
+
+@mixin foncksiyon($bgColor1, $myBorder) {
+  background-color: $bgColor1;
+  color: beige;
+  width: 25%;
+  height: 15rem;
+  border: $myBorder;
+  border-radius: 5px;
+}
+
+.cards {
+  display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  padding: 0.8rem;
+  gap: 0.5rem;
+  .card1 {
+    @include foncksiyon(green, 5px solid rgb(13, 231, 60));
+  }
+  .card2 {
+    @include foncksiyon(red, 5px solid black);
+  }
+  .card3 {
+    @include foncksiyon(grey, 5px solid rgb(0, 0, 0));
+  }
+  .card4 {
+    @include foncksiyon(yellow, 5px solid rgb(61, 37, 172));
+  }
+}
+
+.articles {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  .article1 {
+    background-color: grey;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 10rem;
+  }
+  .article2 {
+    @extend .article1;
+    background-color: $bgBtnColor;
+  }
+}
+footer {
+  $dark: 2;
+  p {
+    @if $dark == 1 {
+      background-color: antiquewhite;
+    } @else if $dark == 2 {
+      background-color: aqua;
+    } @else {
+      background-color: tomato;
+    }
+  }
+  .social-icons {
+    display: flex;
+    height: 10rem;
+    $textColor: #990000, #55004e, #0fa8a1, #121456, #64c217;
+
+    @for $i from 1 through 5 {
+      .social#{$i} {
+        width: 20%;
+        background-color: lighten(rgba(27, 130, 219, 0.89), $i * 5);
+        font-size: $i * 1rem;
+        color: nth($textColor, $i);
+      }
+    }
+  }
+}
