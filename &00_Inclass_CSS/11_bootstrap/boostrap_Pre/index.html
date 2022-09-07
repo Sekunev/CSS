@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <style>
+      .border {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>h1 Bootstrap heading (2.5rem = 40px)</h1>
+    <h2>h2 Bootstrap heading (2rem = 32px)</h2>
+    <h3>h3 Bootstrap heading (1.75rem = 28px)</h3>
+    <h4>h4 Bootstrap heading (1.5rem = 24px)</h4>
+    <h5>h5 Bootstrap heading (1.25rem = 20px)</h5>
+    <h6>h6 Bootstrap heading (1rem = 16px)</h6>
+    <hr />
+    <p class="h1">h1. Bootstrap heading</p>
+    <p class="h2">h2. Bootstrap heading</p>
+    <p class="h3">h3. Bootstrap heading</p>
+    <p class="h4">h4. Bootstrap heading</p>
+    <p class="h5">h5. Bootstrap heading</p>
+    <p class="h6">h6. Bootstrap heading</p>
+    <hr />
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <h1 class="display-5">Display 5</h1>
+    <hr />
+    <p class="lead">
+      Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+      Duis mollis, est non commodo luctus.
+    </p>
+    <hr />
+    <p class="text-left">Left aligned text on all viewport sizes.</p>
+    <p class="text-center">Center aligned text on all viewport sizes.</p>
+    <hr />
+    <p class="fw-bold">Bold text.</p>
+    <p class="fw-bolder">
+      Bolder weight text (relative to the parent element).
+    </p>
+    <p class="fw-normal">Normal weight text.</p>
+    <p class="fw-light">Light weight text.</p>
+    <p class="fw-lighter">
+      Lighter weight text (relative to the parent element).
+    </p>
+    <p class="fst-italic">Italic text.</p>
+    <p class="fst-normal">Text with normal font style</p>
+
+    <hr />
+    <p class="text-primary">.text-primary</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-success fw-bold">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning">.text-warning</p>
+    <p class="text-info">.text-info</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-dark">.text-dark</p>
+    <p class="text-muted">.text-muted</p>
+    <p class="text-white bg-dark">.text-white</p>
+    <hr />
+    <p><a href="#" class="text-primary">Primary link</a></p>
+    <p><a href="#" class="text-secondary">Secondary link</a></p>
+    <p><a href="#" class="text-success">Success link</a></p>
+    <p><a href="#" class="text-danger">Danger link</a></p>
+    <p><a href="#" class="text-warning">Warning link</a></p>
+    <p><a href="#" class="text-info">Info link</a></p>
+    <p><a href="#" class="text-light bg-dark">Light link</a></p>
+    <p><a href="#" class="text-dark">Dark link</a></p>
+    <p><a href="#" class="text-muted">Muted link</a></p>
+    <p><a href="#" class="text-white bg-dark">White link</a></p>
+    <hr />
+    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+    <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+    <hr />
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <hr />
+    <a class="btn btn-primary" href="#" role="button">Link</a>
+    <button class="btn btn-primary" type="submit">Button</button>
+    <input class="btn btn-primary" type="button" value="Input" />
+    <input class="btn btn-primary" type="submit" value="Submit" />
+    <input class="btn btn-primary" type="reset" value="Reset" />
+    <hr />
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+    <hr />
+    Margin & Padding Mülkiyet şunlardan biridir: m - marj belirleyen sınıflar
+    için p - dolgu ayarlayan sınıflar için Tarafların şunlardan biri olduğu
+    yerler: t - üst kenar boşluğu veya üst kenar boşluğu ayarlayan sınıflar için
+    b - margin-bottom veya padding-bottom ayarlayan sınıflar için s - sol kenar
+    boşluğu veya sol doldurma ayarlayan sınıflar için e - sağ kenar boşluğu veya
+    sağ kenar boşluğu ayarlayan sınıflar için x - hem *-left hem de *-right
+    ayarlayan sınıflar için y - hem *-top hem de *-bottom'u ayarlayan sınıflar
+    için boş - öğenin tüm 4 tarafında bir kenar boşluğu veya dolgu ayarlayan
+    sınıflar için Boyut şunlardan biridir: 0 - 0'a ayarlayarak kenar boşluğunu
+    veya dolguyu ortadan kaldıran sınıflar için 1 - (varsayılan olarak) kenar
+    boşluğunu veya dolguyu ayarlayan sınıflar için 2 - (varsayılan olarak) kenar
+    boşluğunu veya dolguyu ayarlayan sınıflar için 3 - (varsayılan olarak) kenar
+    boşluğunu veya dolguyu ayarlayan sınıflar için 4 - (varsayılan olarak) kenar
+    boşluğunu veya dolguyu ayarlayan sınıflar için 5 - (varsayılan olarak) kenar
+    boşluğunu veya dolguyu ayarlayan sınıflar için auto - marjı auto olarak
+    ayarlayan sınıflar için
+    <br />
+    kenar boşlukları, boyutun önüne bir "n" ekleyerek negatif de olabilir - n1 -
+    kenar boşluğunu -.25rem olarak ayarlar (yazı tipi boyutu 16 piksel ise -4
+    piksel) - n2 - kenar boşluğunu -.5rem olarak ayarlar (eğer -8 piksel ise
+    yazı tipi boyutu 16 pikseldir) - n3 - kenar boşluğunu -1rem olarak ayarlar
+    (yazı tipi boyutu 16 piksel ise 16 piksel) - n4 - kenar boşluğunu -1.5rem
+    olarak ayarlar (yazı tipi boyutu 16 pikselse 24 piksel) - n5 - kenar
+    boşluğunu - olarak ayarlar 3rem (yazı tipi boyutu 16 piksel ise -48 piksel)
+    <button type="button" class="btn btn-primary btn-block">Button 1</button>
+    <button type="button" class="btn btn-success btn-block">Button 2</button>
+    <hr />
+    <div class="mx-auto bg-warning" style="width: 250px">Centered</div>
+    <div class="mb-3 bg-warning" style="width: 150px">Margin Bottom</div>
+    <div class="mx-5 bg-warning" style="width: 150px">Margin Left</div>
+    <div class="mt-3 bg-warning" style="width: 150px">Margin top</div>
+    <div class="mt-3 bg-warning" style="width: 150px">Margin top</div>
+    <hr />
+    <span class="border"></span>
+    <span class="border border-0"></span>
+    <span class="border border-top-0"></span>
+    <span class="border border-end-0"></span>
+    <span class="border border-bottom-0"></span>
+    <span class="border border-start-0"></span>
+    <hr />
+    Sınır rengi
+    <span class="border border-primary"></span>
+    <span class="border border-secondary"></span>
+    <span class="border border-success"></span>
+    <span class="border border-danger"></span>
+    <span class="border border-warning"></span>
+    <span class="border border-info"></span>
+    <span class="border border-light"></span>
+    <span class="border border-dark"></span>
+    <span class="border border-white"></span>
+    <hr />
+    Sınır-Genişlik
+    <span class="border border-1"></span>
+    <span class="border border-2"></span>
+    <span class="border border-3"></span>
+    <span class="border border-4"></span>
+    <span class="border border-5"></span>
+    <hr />
+    Sınır Yarıçapı
+    <span class="border rounded-sm"></span>
+    <span class="border rounded"></span>
+    <span class="border rounded-lg"></span>
+    <span class="border rounded-top"></span>
+    <span class="border rounded-end"></span>
+    <span class="border rounded-bottom"></span>
+    <span class="border rounded-start"></span>
+    <span class="border rounded-circle"></span>
+    <span class="border rounded-0"></span>
+    <hr />
+    Genişlik
+    <div class="w-25 bg-success">Width 25%</div>
+    <div class="w-50 bg-success">Width 50%</div>
+    <div class="w-75 bg-success">Width 75%</div>
+    <div class="w-100 bg-success">Width 100%</div>
+    <div class="mw-100 bg-success">Max Width 100%</div>
+    <hr />
+    Yükseklik
+    <div style="height: 200px; background-color: #ddd">
+      <div style="display: inline-block" class="h-25 bg-warning">
+        Height 25%
+      </div>
+      <div style="display: inline-block" class="h-50 bg-warning">
+        Height 50%
+      </div>
+      <div style="display: inline-block" class="h-75 bg-warning">
+        Height 75%
+      </div>
+      <div style="display: inline-block" class="h-100 bg-warning">
+        Height 100%
+      </div>
+      <div
+        class="mh-100 bg-warning"
+        style="height: 500px"
+      >
+        Max Height 100%
+      </div>
+    </div>
+    <hr />
+    <div class="d-inline bg-success">Inline</div>
+    <div class="d-inline bg-success">Inline</div>
+    <hr />
+    <span class="d-block bg-primary">Block</span>
+    <hr />
+    <div class="d-inline-block bg-warning">
+      <h3 class="lead">inline-block</h3>
+      Boot that strap!
+    </div>
+    <div class="d-inline-block bg-warning">
+      <h3>inline-block</h3>
+      Strap that boot!
+    </div>
+    <hr />
+    <img
+      src="https://iconape.com/wp-content/png_logo_vector/aa-2.png"
+      class="img-fluid"
+      alt="Buttons"
+    />
+    <hr />
+    <img
+      src="https://iconape.com/wp-content/png_logo_vector/aa-2.png"
+      class="img-thumbnail"
+      alt="Buttons"
+    />
+    <p>Bir görüntüyü hizalamanın üç yolu vardır. ı</p>
+    <h6>Float Sınıflar</h6>
+    <img
+      src="https://iconape.com/wp-content/png_logo_vector/aa-2.png"
+      class="rounded float-start"
+      alt="Buttons"
+      width="200"
+    />
+    <img
+      src="https://iconape.com/wp-content/png_logo_vector/aa-2.png"
+      class="rounded float-end"
+      alt="Buttons"
+      width="200"
+    />
+
+    <hr />
+    <p><h6>Text Alignment Classes</h6></p> 
+    <div class="text-center">
+        <img src="https://iconape.com/wp-content/png_logo_vector/aa-2.png" class="rounded" alt="Logo">
+       </div>
+
+    <hr>
+    <img src="https://iconape.com/wp-content/png_logo_vector/aa-2.png" class="rounded mx-auto d-block" alt="Logo">
+    <hr>
+    <div class="float-start">Float start on all viewport sizes</div><br>
+    <div class="float-end">Float end on all viewport sizes</div><br>
+    <div class="float-none">Don't float on all viewport sizes</div>
+    <hr>
+    <div class="float-sm-start">Float start on viewports sized SM (small) or wider</div><br>
+    <div class="float-md-start">Float start on viewports sized MD (medium) or wider</div><br>
+    <div class="float-lg-start">Float start on viewports sized LG (large) or wider</div><br>
+    <div class="float-xl-start">Float start on viewports sized XL (extra-large) or wider</div><br>
+    <hr>
+    <div class="bg-info clearfix">
+        <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+        <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+    </div>
+<hr>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Star</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Foe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Star</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Foe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Star</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Foe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Star</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Foe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script> -->
+  </body>
+</html>
